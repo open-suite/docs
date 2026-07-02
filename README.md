@@ -1,41 +1,23 @@
-# Website
+# Open Suite docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Docusaurus site served at https://docs.opensuite.online.
 
-## Installation
-
-```bash
-yarn
-```
-
-## Local Development
+## Develop
 
 ```bash
-yarn start
+npm install
+npm start          # live-reload dev server
+npm run build      # static build into build/ — fails on broken links
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Content lives in `users/`, `admins/`, and `it/` (one sidebar each; see
+`PROJECT.md` for the structure and writing conventions).
 
-## Build
+## Deploy
+
+The site is plain static files behind nginx on the marketing server:
 
 ```bash
-yarn build
+npm run build
+rsync -av --delete build/ root@opensuite.online:/var/www/docs.opensuite.online/
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
