@@ -38,6 +38,7 @@ Use this quick map when you know the job but not the app:
 
 | Job | Open this |
 | --- | --- |
+| Send or read email | **Mail** |
 | Write or edit a file | **Office → Documents** or **Office → Files** |
 | Upload, share, or download files | **Office → Files** |
 | Schedule a meeting | **Calendar** |
@@ -51,6 +52,7 @@ Use this quick map when you know the job but not the app:
 
 The remaining top-level links open the other parts of the workspace:
 
+- **Mail** opens your email inbox.
 - **Meet** opens video meetings.
 - **Chat** opens team chat.
 - **Tables** opens structured data tables.
