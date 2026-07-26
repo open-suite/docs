@@ -4,8 +4,9 @@ sidebar_position: 1
 ---
 # Using Open Suite
 
-Open Suite is a browser workspace for documents, files, calendars, meetings, and
-team tools. These guides are written for people using Open Suite day to day.
+Open Suite is a browser workspace for email, documents, files, calendars,
+meetings, and team tools. These guides are written for people using Open Suite
+day to day.
 
 Start from the portal at `https://bridge.demo.opensuite.online/`. After sign-in,
 the home page shows your recent documents, upcoming calendar events, meeting
@@ -16,6 +17,7 @@ rooms, and file shortcuts.
 ## What you can do
 
 - [Find your way around Open Suite](./navigate-open-suite.md)
+- [Send and manage email](./use-mail.md)
 - [Work with files](./work-with-files.md)
 - [Share files and folders](./share-files-and-folders.md)
 - [Create a Word document](./create-a-document.md)
@@ -38,5 +40,5 @@ Use the dashboard first when you are not sure where to go:
    ready.
 2. Use **Meet → Start instant meeting** for an unscheduled call.
 3. Use **Docs** or **NextCloud** to reopen recent documents and files.
-4. Use the top navigation to open Office apps, Meet, Chat, Tables, Wiki, and
-   Calendar.
+4. Use the top navigation to open Mail, Office apps, Meet, Chat, Tables, Wiki,
+   and Calendar.

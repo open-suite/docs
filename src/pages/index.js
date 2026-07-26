@@ -7,8 +7,8 @@ const guides = [
   {
     title: 'Users',
     to: '/users',
-    text: 'Daily workflows for documents, files, calendars, meetings, chat, contacts, projects, and tables.',
-    links: ['Navigate', 'Files', 'Calendar', 'Meet'],
+    text: 'Daily workflows for email, documents, files, calendars, meetings, chat, contacts, projects, and tables.',
+    links: ['Navigate', 'Mail', 'Files', 'Calendar'],
   },
   {
     title: 'Admins',
@@ -26,6 +26,7 @@ const guides = [
 
 const products = [
   'Portal',
+  'Mail',
   'Files',
   'Documents',
   'Calendar',
@@ -46,8 +47,8 @@ export default function Home() {
             <Heading as="h1">The operating manual for an open workplace.</Heading>
             <p>
               Foolproof user guides, admin runbooks, and IT procedures for the
-              self-hosted office suite: files, documents, meetings, calendars,
-              chat, projects, and tables.
+              self-hosted office suite: email, files, documents, meetings,
+              calendars, chat, projects, and tables.
             </p>
             <div className={styles.actions}>
               <Link className="button button--primary button--lg" to="/users">
@@ -88,8 +89,9 @@ export default function Home() {
             <Heading as="h2">Every guide starts from the screen people see.</Heading>
           </div>
           <p>
-            The user docs use real demo screenshots, numbered callouts, direct
-            wording, and short recovery paths for common mistakes.
+            The user docs use current demo screenshots, accessible HTML
+            callouts, direct wording, and short recovery paths for common
+            mistakes.
           </p>
         </section>
       </main>

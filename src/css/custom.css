@@ -94,6 +94,81 @@ body {
   margin: 1.25rem 0 2rem;
 }
 
+.annotated-shot-scroll {
+  margin: 1.25rem 0 1rem;
+  overflow-x: auto;
+}
+
+.annotated-shot {
+  margin: 0;
+  position: relative;
+}
+
+.annotated-shot img {
+  margin: 0;
+  width: 100%;
+}
+
+.shot-marker {
+  align-items: center;
+  background: #ff5b3e;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(7, 28, 47, 0.4);
+  color: #ffffff;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 800;
+  height: 1.75rem;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 1.75rem;
+}
+
+.shot-callouts {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 0 0 2rem;
+}
+
+.shot-callouts > div {
+  align-items: flex-start;
+  background: #f4f8fc;
+  border: 1px solid #d4e1ee;
+  border-radius: 6px;
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.75rem;
+}
+
+.shot-callouts > div > span {
+  align-items: center;
+  background: #ff5b3e;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  flex: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  height: 1.5rem;
+  justify-content: center;
+}
+
+.shot-callouts p {
+  margin: 0;
+}
+
+.shot-scroll-hint {
+  display: none;
+}
+
+[data-theme='dark'] .shot-callouts > div {
+  background: #172336;
+  border-color: #2d4059;
+}
+
 .theme-doc-markdown table {
   display: table;
   width: 100%;
@@ -174,5 +249,16 @@ body {
     border-right: 0;
     margin-top: 0;
     padding: 24px 18px;
+  }
+
+  .annotated-shot {
+    min-width: 680px;
+  }
+
+  .shot-scroll-hint {
+    color: var(--ifm-color-emphasis-700);
+    display: block;
+    font-size: 0.85rem;
+    margin: 1rem 0 -0.75rem;
   }
 }
