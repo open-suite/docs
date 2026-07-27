@@ -8,11 +8,27 @@ Open Suite is a browser workspace for email, documents, files, calendars,
 meetings, and team tools. These guides are written for people using Open Suite
 day to day.
 
-Start from the portal at `https://bridge.demo.opensuite.online/`. After sign-in,
+Start from the [portal](https://bridge.demo.opensuite.online/). After sign-in,
 the home page shows your recent documents, upcoming calendar events, meeting
-rooms, and file shortcuts.
+rooms, mail, and file shortcuts.
 
-![Open Suite dashboard with key actions marked](/img/users/portal-dashboard-annotated.png)
+<p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
+<div className="annotated-shot-scroll">
+  <div className="annotated-shot">
+    <img src="/img/users/portal-dashboard.png" alt="Open Suite home dashboard" />
+    <span aria-hidden="true" className="shot-marker" style={{left: '39%', top: '20%'}}>1</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '3.5%', top: '37%'}}>2</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '76%', top: '20%'}}>3</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '39%', top: '68%'}}>4</span>
+  </div>
+</div>
+
+<div className="shot-callouts">
+  <div><span>1</span><p><strong>Mail</strong> previews unread messages and opens your inbox.</p></div>
+  <div><span>2</span><p><strong>Calendar</strong> shows upcoming events and their join links.</p></div>
+  <div><span>3</span><p><strong>Meet</strong> starts an instant call or reopens a room.</p></div>
+  <div><span>4</span><p><strong>Files</strong> keeps recent work close to the dashboard.</p></div>
+</div>
 
 ## What you can do
 
@@ -39,6 +55,6 @@ Use the dashboard first when you are not sure where to go:
 1. Check **Calendar** for upcoming meetings and click **Join** when a meeting is
    ready.
 2. Use **Meet → Start instant meeting** for an unscheduled call.
-3. Use **Docs** or **NextCloud** to reopen recent documents and files.
-4. Use the top navigation to open Mail, Office apps, Meet, Chat, Tables, Wiki,
-   and Calendar.
+3. Use **Docs** or **Files** to reopen recent documents and files.
+4. Use the top navigation to open Mail, Chat, Meet, Office apps, Calendar, or
+   the tools under **More**.
