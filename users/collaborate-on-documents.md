@@ -5,20 +5,28 @@ sidebar_position: 6
 
 Use browser editing when multiple people need to work from one current version.
 
+## Share one document
+
+The owner should share the document with each collaborator and grant edit access.
+Use named sharing for internal work so the owner can review and remove access.
+See [Share files and folders](./share-files-and-folders.md).
+
 ## Open the shared document
 
-Open **Office → Files**, then click the document name. If someone shared the file
-with you, check **Shares** or use search.
+Open **Office → Files**. Find the document in **Shares**, **Recent**, or search,
+then click its name.
 
 ![Files list](/img/users/files-list.png)
 
 ## Edit together
 
 When another person opens the same document, both of you work in the browser
-editor. Changes save automatically.
+editor. Collaborators' changes appear in the shared file, and routine edits save
+automatically. Wait for the editor's saved status before closing the tab.
 
-Use short editing sessions for active collaboration. For longer review cycles,
-agree who owns the next edit before making major changes.
+Editor toolbars vary by file type and screen size. Use the editor's comment
+action when you want to suggest a change without replacing the text, and reply
+in the same comment thread to keep review context together.
 
 ## Avoid version confusion
 
@@ -35,5 +43,6 @@ an offline copy. That creates multiple versions for people to reconcile.
 
 ## Export when work is final
 
-Use **File → Download as → Word Document** when the document must leave Open
-Suite as an attachment or archive copy.
+Use **File → Download as** and choose the required format when the document must
+leave Open Suite as an attachment or archive copy. Keep the shared Open Suite
+file as the working source of truth.

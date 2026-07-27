@@ -9,8 +9,8 @@ meetings, and team tools. These guides are written for people using Open Suite
 day to day.
 
 Start from the [portal](https://bridge.demo.opensuite.online/). After sign-in,
-the home page shows your recent documents, upcoming calendar events, meeting
-rooms, mail, and file shortcuts.
+the home page shows team chat, mail, meeting rooms, upcoming calendar events,
+recent Wiki pages, and file shortcuts.
 
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
@@ -36,15 +36,14 @@ rooms, mail, and file shortcuts.
 - [Send and manage email](./use-mail.md)
 - [Work with files](./work-with-files.md)
 - [Share files and folders](./share-files-and-folders.md)
-- [Create a Word document](./create-a-document.md)
+- [Create a document](./create-a-document.md)
 - [Collaborate on documents](./collaborate-on-documents.md)
 - [Create a calendar invite](./create-a-calendar-invite.md)
 - [Join a video call](./join-a-video-call.md)
 - [Use contacts](./use-contacts.md)
-- [Track project tasks](./track-project-tasks.md)
 - [Work with tables](./work-with-tables.md)
-- [Use team chat](./use-team-chat.md)
 - [Search and find work](./search-and-find-work.md)
+- [Use team chat](./use-team-chat.md)
 - [Manage your account](./manage-your-account.md)
 - [Fix common problems](./troubleshooting.md)
 
@@ -55,6 +54,7 @@ Use the dashboard first when you are not sure where to go:
 1. Check **Calendar** for upcoming meetings and click **Join** when a meeting is
    ready.
 2. Use **Meet → Start instant meeting** for an unscheduled call.
-3. Use **Docs** or **Files** to reopen recent documents and files.
+3. Use **Docs** to reopen recent Wiki pages, or **Files** to reopen Office
+   documents and uploaded files.
 4. Use the top navigation to open Mail, Chat, Meet, Office apps, Calendar, or
    the tools under **More**.
