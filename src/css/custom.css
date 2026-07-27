@@ -126,6 +126,13 @@ body {
   width: 1.75rem;
 }
 
+.shot-marker--compact {
+  border-width: 1.5px;
+  font-size: 0.68rem;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
 .shot-callouts {
   display: grid;
   gap: 0.65rem;
