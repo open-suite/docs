@@ -12,6 +12,9 @@ From the portal, click **Calendar** in the top navigation.
 
 ![Calendar month view](/img/users/calendar-month.png)
 
+*This existing demo screenshot shows the Calendar app before the portal
+navigation was reorganized. Use the current **Calendar** link described above.*
+
 ## Create the event
 
 1. Click **Event**.
@@ -19,20 +22,40 @@ From the portal, click **Calendar** in the top navigation.
 3. Check the start and end time.
 4. Add guests by email address.
 
-![Calendar event form with required fields marked](/img/users/calendar-new-event-annotated.png)
+<p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
+<div className="annotated-shot-scroll">
+  <div className="annotated-shot">
+    <img src="/img/users/calendar-new-event.png" alt="Calendar form for a new event" />
+    <span aria-hidden="true" className="shot-marker" style={{left: '59%', top: '22.5%'}}>1</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '59%', top: '31%'}}>2</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '62%', top: '51%'}}>3</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '62%', top: '86%'}}>4</span>
+    <span aria-hidden="true" className="shot-marker" style={{left: '56%', top: '92%'}}>5</span>
+  </div>
+</div>
+
+<div className="shot-callouts">
+  <div><span>1</span><p><strong>Title</strong> tells attendees what the meeting is for.</p></div>
+  <div><span>2</span><p><strong>From and To</strong> set the date, time, and duration.</p></div>
+  <div><span>3</span><p><strong>Meet link</strong> is added to the location field for a new event.</p></div>
+  <div><span>4</span><p><strong>Attendees</strong> searches for users, contacts, groups, or email addresses.</p></div>
+  <div><span>5</span><p><strong>Save</strong> creates the event and sends the invitation.</p></div>
+</div>
 
 ## Add the video link
 
-New events get a Meet link automatically. If the link is missing, click **Add
-Meet link** before saving the event.
+Open Suite adds a Meet link to the location field of a new event automatically.
+Wait for the link to appear before saving. If the field remains empty, click
+**Add Meet link**.
 
-The Meet URL is stored in the event location. That makes the meeting joinable
-from Calendar and from the portal calendar widget.
+The Meet URL in the event location makes the call joinable from Calendar and
+from the portal's Calendar card. Anyone who has the URL can use it, so share the
+invite only with the intended participants.
 
 ## Send the invite
 
-Click **Save**. Calendar sends the invitation to the guests and keeps the event
-on your calendar.
+Click **Save**. Calendar keeps the event on your calendar and sends the invite to
+the attendees you added.
 
 ## Write a useful description
 
@@ -45,8 +68,8 @@ Add enough context that guests know what to prepare:
 
 ## Change or cancel a meeting
 
-Open the event from Calendar, edit the fields, and save again. Guests receive an
-updated invitation when the change affects them.
+Open the event from Calendar, edit the fields, and save again. To cancel the
+meeting for everyone, delete the event.
 
 If the meeting should not happen, delete the event instead of only removing the
 Meet link. That keeps everyone else's calendar clean.

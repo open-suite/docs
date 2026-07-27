@@ -10,11 +10,12 @@ navigation is the fastest way to move between tools.
 
 The home page collects your current work in one place:
 
+- **Chat** opens team conversations.
 - **Mail** shows unread messages and opens your inbox.
-- **Docs** shows recent documents.
+- **Docs** shows recent pages from **More → Wiki**.
 - **Calendar** shows upcoming meetings with join links.
 - **Meet** shows meeting rooms and lets you start a call.
-- **Files** shows recent files.
+- **Files** shows recent Office documents and uploaded files.
 
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
