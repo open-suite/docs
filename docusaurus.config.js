@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Open Suite Docs',
   tagline: 'The open, self-hosted digital workplace',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   future: {v4: true},
 
@@ -61,9 +61,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/opensuite-social-card.png',
+      metadata: [{name: 'theme-color', content: '#0b1f33'}],
       colorMode: {respectPrefersColorScheme: true},
       navbar: {
         title: 'Open Suite',
+        logo: {
+          alt: 'Open Suite',
+          src: 'img/logo.svg',
+        },
         items: [
           {
             type: 'docSidebar',
@@ -105,7 +111,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Open Suite. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Open Suite.`,
       },
       prism: {
         theme: prismThemes.github,

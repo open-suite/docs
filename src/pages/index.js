@@ -38,7 +38,7 @@ const products = [
 
 export default function Home() {
   return (
-    <Layout title="Open Suite Docs" description="Practical Open Suite documentation">
+    <Layout description="Practical Open Suite documentation">
       <main className={styles.page}>
         <section className={styles.hero}>
           <img className={styles.heroArt} src="/img/opensuite-hero.png" alt="" />
