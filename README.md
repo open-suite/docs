@@ -19,5 +19,10 @@ The site is plain static files behind nginx on the marketing server:
 
 ```bash
 npm run build
-rsync -av --delete build/ root@opensuite.online:/var/www/docs.opensuite.online/
+release=$(date -u +%Y%m%d%H%M%S)
+root=/var/www/docs.opensuite.online
+ssh root@91.107.222.144 "mkdir -p $root/releases/$release"
+rsync -av --delete build/ root@91.107.222.144:$root/releases/$release/
+ssh root@91.107.222.144 \
+  "ln -sfn releases/$release $root/current.new && mv -Tf $root/current.new $root/current"
 ```
