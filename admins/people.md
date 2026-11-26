@@ -34,6 +34,9 @@ Addresses use 3 to 32 letters, digits, dots or dashes. Some names, such as
 many people as the plan allows, adding fails with "Your plan includes 5
 people. Upgrade to add more."
 
+To add a member for a program rather than a person, click **Add agent**
+instead; see [Agents](./agents.md).
+
 ## Change a role, reset a password, suspend or remove
 
 Click **...** at the end of the person's row.

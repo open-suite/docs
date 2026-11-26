@@ -14,7 +14,9 @@ navigation bar for owners and administrators.
 Admin has three tabs:
 
 - **People**: add colleagues, change their role, reset passwords, suspend and
-  remove accounts. See [People](./people.md).
+  remove accounts. See [People](./people.md). Agents, members that work
+  through the API instead of signing in, are added here too; see
+  [Agents](./agents.md).
 - **Domains**: use your own domain for the suite's web address and for email.
   See [Custom domains](./custom-domains.md).
 - **Organisation**: rename the organisation and see the plan, its limits and

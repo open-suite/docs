@@ -32,6 +32,13 @@ in on the one you used.
 If you have forgotten your password, ask an administrator to reset it. You
 receive a temporary password and choose a new one when you sign in.
 
+## API tokens and connected apps
+
+The **API tokens** card lists the tokens you created for scripts and the AI
+assistants and other apps you connected. See
+[Create an API token](./api-tokens.md) and
+[Connect Claude or ChatGPT](./connect-ai.md).
+
 ## Sign out
 
 Click **Sign out** on this page, or in the account menu.

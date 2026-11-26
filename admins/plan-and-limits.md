@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Plan and limits
 ---
 # Plan and limits
@@ -47,7 +47,8 @@ fail with "Your organisation's storage is full."
 
 When the organisation has as many people or custom domains as the plan
 allows, adding another fails with a message naming the limit. Removing a
-person frees their place.
+person frees their place. [Agents](./agents.md) count as people, because
+each has its own mailbox and storage.
 
 ## Change the plan
 

@@ -74,6 +74,8 @@ run the installation for an account.
 | Present slides | [Presentations](./presentations.md) |
 | Find anything | [Search](./home-and-search.md#search-everything) |
 | Change your name or password | [Your account](./account.md) |
+| Let a script use your account | [API tokens](./api-tokens.md) |
+| Work with an AI assistant | [Connect Claude or ChatGPT](./connect-ai.md) |
 
 ## Sign out
 
