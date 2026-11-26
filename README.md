@@ -1,6 +1,9 @@
 # Open Suite docs
 
-Docusaurus site served at https://docs.opensuite.online.
+Docusaurus site served at https://docs.opensuite.online. It documents Open
+Suite ([open-suite/opensuite-saas](https://github.com/open-suite/opensuite-saas)).
+The earlier k3s distribution's docs live at https://docs.opensuite.online/classic/
+and are not built from this branch.
 
 ## Develop
 

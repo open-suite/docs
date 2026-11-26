@@ -7,55 +7,55 @@ const guides = [
   {
     title: 'Users',
     to: '/users',
-    text: 'Daily workflows for email, documents, files, calendars, meetings, chat, contacts, projects, and tables.',
-    links: ['Navigate', 'Mail', 'Files', 'Calendar'],
+    text: 'Mail, calendar, contacts, chat, meetings, files, documents, spreadsheets and presentations, step by step.',
+    links: ['Mail', 'Calendar', 'Meet', 'Files', 'Documents'],
   },
   {
     title: 'Admins',
     to: '/admins',
-    text: 'Operational guides for inviting people, resetting access, and managing storage limits.',
-    links: ['Users', 'Passwords', 'Quotas'],
+    text: 'The Admin screen: add people, reset passwords, connect your own domain, and understand your plan.',
+    links: ['People', 'Domains', 'Plan'],
   },
   {
     title: 'IT',
     to: '/it',
-    text: 'Deployment and maintenance notes for the single-VPS Open Suite stack.',
-    links: ['Install', 'Backups', 'Operations'],
+    text: 'Install Open Suite on one Ubuntu server, make its mail deliverable, upgrade it and back it up.',
+    links: ['Install', 'Mail DNS', 'Upgrades', 'Backups'],
   },
 ];
 
 const products = [
-  'Portal',
   'Mail',
+  'Calendar',
+  'Contacts',
+  'Chat',
+  'Meet',
   'Files',
   'Documents',
-  'Calendar',
-  'Meet',
-  'Chat',
-  'Projects',
-  'Tables',
+  'Spreadsheets',
+  'Presentations',
 ];
 
 export default function Home() {
   return (
-    <Layout description="Practical Open Suite documentation">
+    <Layout description="Documentation for Open Suite">
       <main className={styles.page}>
         <section className={styles.hero}>
           <img className={styles.heroArt} src="/img/opensuite-hero.png" alt="" />
           <div className={styles.heroText}>
             <span className={styles.eyebrow}>Open Suite documentation</span>
-            <Heading as="h1">The operating manual for an open workplace.</Heading>
+            <Heading as="h1">One app for your organisation's office work.</Heading>
             <p>
-              Foolproof user guides, admin runbooks, and IT procedures for the
-              self-hosted office suite: email, files, documents, meetings,
-              calendars, chat, projects, and tables.
+              Open Suite runs mail, calendar, chat, video meetings, files,
+              documents, spreadsheets and presentations behind one sign-in, on
+              a single server you control.
             </p>
             <div className={styles.actions}>
               <Link className="button button--primary button--lg" to="/users">
                 Browse user guides
               </Link>
-              <Link className="button button--secondary button--lg" to="/users/navigate-open-suite">
-                Learn the workspace
+              <Link className="button button--secondary button--lg" to="/it/install">
+                Install Open Suite
               </Link>
             </div>
             <div className={styles.productStrip}>
@@ -64,8 +64,8 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className={styles.preview} aria-label="Open Suite dashboard preview">
-            <img src="/img/opensuite-apps.png" alt="Open Suite workspace illustration" />
+          <div className={styles.preview} aria-label="Open Suite Home screen">
+            <img src="/img/users/home.png" alt="The Open Suite Home screen with today's agenda, recent documents, inbox and chat" />
           </div>
         </section>
 
@@ -85,13 +85,13 @@ export default function Home() {
 
         <section className={styles.workflow}>
           <div>
-            <span className={styles.eyebrow}>End-user focus</span>
-            <Heading as="h2">Every guide starts from the screen people see.</Heading>
+            <span className={styles.eyebrow}>Earlier version</span>
+            <Heading as="h2">Running the k3s distribution?</Heading>
           </div>
           <p>
-            The user docs use current demo screenshots, accessible HTML
-            callouts, direct wording, and short recovery paths for common
-            mistakes.
+            The earlier Open Suite, assembled from Nextcloud, Keycloak and La
+            Suite apps on k3s, has its own documentation at{' '}
+            <a href="https://docs.opensuite.online/classic/">docs.opensuite.online/classic</a>.
           </p>
         </section>
       </main>
