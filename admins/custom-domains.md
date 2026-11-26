@@ -4,8 +4,16 @@ title: Custom domains
 ---
 # Use your own domain
 
-By default your organisation uses the installation's web address and mail
-domain. Under **Admin** > **Domains** you can add a domain you own, for the
+By default your organisation uses the installation's web address, and email
+addresses on its own address on Open Suite, such as `acme.opensuite.online`,
+chosen when it was created. **Admin** > **Domains** shows that address first,
+marked **Included**: it needs no setup, does not count as a custom domain and
+cannot be removed. New people and groups get their addresses there unless you
+choose another domain. Organisations created before the installation gave
+organisations their own address, and installations that do not, use the
+installation's shared mail domain instead.
+
+Under **Admin** > **Domains** you can also add a domain you own, for the
 suite's web address, for email addresses, or both. The Free plan includes one
 custom domain, the Team plan ten.
 

@@ -46,18 +46,33 @@ If the installation allows sign-up, the sign-in page shows
 yourself as its owner:
 
 1. Click **Create an organisation**.
-2. Enter the **Organisation** name, **Your name** and **Your address** (the
-   part before `@`). Open Suite tells you whether the address is available.
-3. Choose a **Password** of at least 10 characters.
-4. If the form asks for an **Invitation code**, enter the code the people who
+2. Enter the **Organisation** name. Open Suite suggests **Your organisation's
+   address** from it, such as `acme` for `acme.opensuite.online`, and tells
+   you whether it is free; change it if you like. Everyone you add gets an
+   email address there.
+3. Enter **Your name** and **Your address** (the part before `@`), such as
+   `jane` for `jane@acme.opensuite.online`. This is your sign-in and your
+   email address.
+4. Choose a **Password** of at least 10 characters.
+5. If the form asks for an **Invitation code**, enter the code the people who
    run the installation gave you.
-5. Click **Create organisation**.
+6. Under **Start with**, choose:
+   - **Example data** to explore the suite with something in it: two example
+     colleagues with documents, files, mail, a shared Sales inbox, calendar
+     events and a chat, all around a product launch. You can remove it in one
+     step later (see [Plan and limits](/admins/plan-and-limits#remove-the-example-data)).
+   - **An empty organisation** to start with just yourself.
+7. Click **Create organisation**.
 
 ![The Create your organisation form](/img/users/sign-up.png)
 
 You go straight to Home. As the owner, you can add colleagues from
 [Admin](/admins). If the page says **Sign-up is closed**, ask the people who
 run the installation for an account.
+
+Some installations do not give each organisation its own address. Their form
+has no organisation address and no **Start with** choice, and your address is
+on the installation's own domain.
 
 ## What is where
 

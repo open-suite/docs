@@ -13,6 +13,15 @@ The page shows your name, address and organisation.
 
 ![The Your account page](/img/users/account.png)
 
+## Add a picture
+
+Under **Profile**, click **Add a picture** and choose a photo. Open Suite
+crops it to a square from the middle and makes it small before saving it.
+Your colleagues see it wherever your initials were: in Mail, Chat, documents,
+calendar invitations and Contacts. **Change picture** replaces it and
+**Remove** goes back to your initials. People outside your organisation never
+see it.
+
 ## Change your name
 
 Edit **Name** under **Profile** and click **Save**. Colleagues see the new
