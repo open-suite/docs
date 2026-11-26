@@ -5,19 +5,21 @@ title: Contacts
 # Contacts
 
 Click **Contacts** in the navigation bar (or **Contacts** in your account
-menu). The list has two parts:
+menu). The list has up to three parts:
 
 - **My contacts**: your own address book. Only you see it.
 - Your organisation's name: everyone in your organisation. Administrators
   manage this list; you cannot edit it.
+- **Groups**: your organisation's [shared inboxes](./shared-inboxes.md).
+  Click one to see what it is for and who is in it.
 
 ![A contact's details](/img/users/contacts.png)
 
 Click a person to see their details. **Write an email** starts a message to
 them, and clicking an email address does the same.
 
-People in both lists are suggested as you type an address in Mail or add
-guests to an event.
+People and groups in these lists are suggested as you type an address in
+Mail or add guests to an event.
 
 ## Add or edit a contact
 
@@ -36,7 +38,7 @@ it.
 
 ## Search
 
-Type in **Search contacts** (or press /) to filter both lists by name, email,
+Type in **Search contacts** (or press /) to filter the lists by name, email,
 company or phone number.
 
 ## Import and export

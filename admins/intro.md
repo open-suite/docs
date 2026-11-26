@@ -11,18 +11,20 @@ navigation bar for owners and administrators.
 
 ![The Admin screen with the People tab](/img/admins/people.png)
 
-Admin has three tabs:
+Admin has four tabs:
 
 - **People**: add colleagues, change their role, reset passwords, suspend and
   remove accounts. See [People](./people.md). Agents, members that work
   through the API instead of signing in, are added here too; see
   [Agents](./agents.md).
+- **Groups**: shared inboxes such as `sales@`, and who reads and answers
+  them. See [Groups](./groups.md).
 - **Domains**: use your own domain for the suite's web address and for email.
   See [Custom domains](./custom-domains.md).
 - **Organisation**: rename the organisation and see the plan, its limits and
   storage use. See [Plan and limits](./plan-and-limits.md).
 
-People who run the whole installation (platform operators) also see a fourth
+People who run the whole installation (platform operators) also see a fifth
 tab, **All organisations**; see
 [Plan and limits](./plan-and-limits.md#change-the-plan).
 
@@ -31,7 +33,7 @@ tab, **All organisations**; see
 | Role | Can do |
 | --- | --- |
 | Owner | Everything an administrator can, plus make other people owners and change or remove other owners. The person who created the organisation is its first owner. |
-| Administrator | Add, suspend, reactivate and remove people; reset their passwords; make people members or administrators; manage domains; rename the organisation. Administrators cannot change an owner. |
+| Administrator | Add, suspend, reactivate and remove people; reset their passwords; make people members or administrators; create, manage and delete groups; manage domains; rename the organisation. Administrators cannot change an owner. |
 | Member | Use the suite. No Admin screen. |
 
 An organisation always keeps at least one active owner. Nobody can suspend or

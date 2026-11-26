@@ -16,7 +16,8 @@ to work. The same operations are offered to AI assistants as tools of the
 | --- | --- |
 | Account and people | Who the token acts as (`get_me`), your own tokens, the organisation's directory |
 | Administration | Add, change, suspend and remove people and [agents](/admins/agents), agents' tokens, custom domains, the organisation's name (administrators only) |
-| Mail | Folders, list and search, read messages and conversations, send, reply, forward, drafts, attachments, move, flag, delete |
+| Groups | The organisation's [shared inboxes](/admins/groups) and their members; create, rename and delete them, add and remove members (administrators and group admins) |
+| Mail | Folders, list and search, read messages and conversations, send, reply, forward, drafts, attachments, move, flag, delete; in your own mailbox or, with `group`, a group's |
 | Calendar | Calendars, events in a time window (repeats unrolled), create and change events with guests and a meeting link, answer invitations, colleagues' free/busy times |
 | Contacts | Your address book: list, find, add, change, delete |
 | Chat | Conversations, read messages, send messages and files, start direct and group conversations |
@@ -58,7 +59,7 @@ curl https://office.demo.opensuite.online/api/v1/me \
 {
   "user": {"id": "u8f2k1x9q3", "name": "Maria Lopez", "email": "maria.lopez@demo.opensuite.online", "role": "owner", "agent": false},
   "org": {"id": "o4n7c2v8m1", "name": "Northwind Studio", "plan": "free",
-          "limits": {"label": "Free", "maxUsers": 5, "storageGB": 5, "domains": 1, "mailOutside": false}},
+          "limits": {"label": "Free", "maxUsers": 5, "storageGB": 5, "domains": 1, "maxGroups": 5, "mailOutside": false}},
   "readOnly": false
 }
 ```
@@ -80,6 +81,24 @@ curl https://office.demo.opensuite.online/api/v1/mail/send \
 
 The response gives the sent message's `id` and `threadId`. A copy is filed
 in Sent.
+
+Every mail operation also works in a group's shared inbox: add `group` with
+the group's id or address (`list_groups` lists them). This answers the
+newest message in the Enquiries group as the group:
+
+```bash
+id=$(curl -s "https://office.demo.opensuite.online/api/v1/mail/messages?group=northwind.enquiries@demo.opensuite.online&limit=1" \
+  -H "Authorization: Bearer $OPENSUITE_TOKEN" | jq -r '.items[0].id')
+curl "https://office.demo.opensuite.online/api/v1/mail/messages/$id/reply?group=northwind.enquiries@demo.opensuite.online" \
+  -H "Authorization: Bearer $OPENSUITE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Thank you, we will be in touch this week."}'
+```
+
+The reply comes from the group's address, and the group's messages report
+who in it has read and answered them (`readBy`, `repliedBy`). The member's
+role decides what works: a viewer can read and mark read, but sending,
+filing and deleting are refused.
 
 Create an event with a guest and a video meeting link:
 

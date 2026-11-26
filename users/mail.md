@@ -20,6 +20,10 @@ its unread messages (for Drafts, all messages).
 
 New mail arrives without reloading the page.
 
+If you belong to any groups (shared inboxes such as `sales@`), they are
+listed under **Groups**, below your own folders. See
+[Shared inboxes](./shared-inboxes.md).
+
 ## Read a conversation
 
 Click a message in the list. Open Suite shows the whole conversation and
@@ -55,9 +59,10 @@ organiser and the event appears in your calendar. See
 
 ## Write a message
 
-1. Click **Compose** (or press c).
-2. In **To**, type a name or address. Open Suite suggests colleagues and your
-   contacts as you type. Separate several addresses with commas. Click
+1. Click **Compose** (or press c). If you can send as a group, choose your
+   own address or the group's under **From**.
+2. In **To**, type a name or address. Open Suite suggests colleagues, groups
+   and your contacts as you type. Separate several addresses with commas. Click
    **Cc Bcc** to add copy recipients.
 3. Enter a **Subject** and write the message. The bar below the message has
    **Bold**, **Italic** and **Bulleted list**.
