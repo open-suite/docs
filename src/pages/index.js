@@ -22,6 +22,12 @@ const guides = [
     text: 'Install Open Suite on one Ubuntu server, make its mail deliverable, upgrade it and back it up.',
     links: ['Install', 'Mail DNS', 'Upgrades', 'Backups'],
   },
+  {
+    title: 'API',
+    to: '/api',
+    text: 'Automate Open Suite with API tokens, or connect Claude, ChatGPT and other AI assistants through its MCP server.',
+    links: ['Authentication', 'MCP', 'Documents', 'Reference'],
+  },
 ];
 
 const products = [

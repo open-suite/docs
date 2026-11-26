@@ -13,7 +13,7 @@ npm start          # live-reload dev server
 npm run build      # static build into build/ — fails on broken links
 ```
 
-Content lives in `users/`, `admins/`, and `it/` (one sidebar each; see
+Content lives in `users/`, `admins/`, `it/` and `api/` (one sidebar each; see
 `PROJECT.md` for the structure and writing conventions).
 
 ## Deploy

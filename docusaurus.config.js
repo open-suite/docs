@@ -56,6 +56,15 @@ const config = {
         sidebarPath: './sidebars.js',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'api',
+        path: 'api',
+        routeBasePath: 'api',
+        sidebarPath: './sidebars.js',
+      },
+    ],
   ],
 
   themeConfig:
@@ -93,6 +102,13 @@ const config = {
             label: 'For IT',
           },
           {
+            type: 'docSidebar',
+            docsPluginId: 'api',
+            sidebarId: 'defaultSidebar',
+            position: 'left',
+            label: 'API',
+          },
+          {
             href: 'https://docs.opensuite.online/classic/',
             label: 'Classic (k3s) docs',
             position: 'right',
@@ -113,6 +129,7 @@ const config = {
               {label: 'For users', to: '/users'},
               {label: 'For admins', to: '/admins'},
               {label: 'For IT', to: '/it'},
+              {label: 'API', to: '/api'},
             ],
           },
           {
