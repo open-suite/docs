@@ -51,6 +51,29 @@ plan allows, adding another fails with a message naming the limit. Removing a
 person or deleting a group frees its place. Groups do not count as people. [Agents](./agents.md) count as people, because
 each has its own mailbox and storage.
 
+The example colleagues and the example Sales group of an organisation that
+started with example data do not count: they cannot sign in, and they are
+there only until you remove them. The organisation's own address on Open
+Suite (see [Custom domains](./custom-domains.md)) does not count as a custom
+domain.
+
+## Remove the example data
+
+If you chose **Example data** when you created the organisation, the
+**Organisation** tab has an **Example data** card. Click **Remove example
+data**, then **Remove**. This deletes:
+
+- the example colleagues, Ada Lovelace and Grace Hopper, with their mailboxes;
+- the Sales group and all of its mail;
+- the example documents, files, folders and meeting rooms;
+- the example mail, events, contacts and chat conversation in your own
+  accounts.
+
+What you and your colleagues made stays, including documents and files you
+put in an example folder: they move to the top level of **Files**. Anything
+an example colleague owned that was not part of the example becomes yours.
+The card then disappears.
+
 ## Change the plan
 
 There is no upgrade button in the app. The platform operators of your
