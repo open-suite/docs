@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Open Suite Docs',
-  tagline: 'The open, self-hosted digital workplace',
+  tagline: 'Mail, calendar, chat, meetings, files and documents in one app on one server',
   favicon: 'img/logo.svg',
 
   future: {v4: true},
@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/',
 
   organizationName: 'open-suite',
-  projectName: 'open-suite',
+  projectName: 'opensuite-saas',
 
   onBrokenLinks: 'throw',
 
@@ -93,7 +93,12 @@ const config = {
             label: 'For IT',
           },
           {
-            href: 'https://github.com/open-suite/open-suite',
+            href: 'https://docs.opensuite.online/classic/',
+            label: 'Classic (k3s) docs',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/open-suite/opensuite-saas',
             label: 'GitHub',
             position: 'right',
           },
@@ -108,6 +113,14 @@ const config = {
               {label: 'For users', to: '/users'},
               {label: 'For admins', to: '/admins'},
               {label: 'For IT', to: '/it'},
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {label: 'Live demo', href: 'https://office.demo.opensuite.online'},
+              {label: 'Source on GitHub', href: 'https://github.com/open-suite/opensuite-saas'},
+              {label: 'Classic (k3s) docs', href: 'https://docs.opensuite.online/classic/'},
             ],
           },
         ],

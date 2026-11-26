@@ -1,60 +1,81 @@
 ---
-slug: /
 sidebar_position: 1
+title: Get started
+slug: /
 ---
-# Using Open Suite
+# Get started with Open Suite
 
-Open Suite is a browser workspace for email, documents, files, calendars,
-meetings, and team tools. These guides are written for people using Open Suite
-day to day.
+Open Suite is an office suite in your browser: mail, calendar, contacts, chat,
+video meetings, files, documents, spreadsheets and presentations. Everything is
+in one app with one sign-in, and one search box finds anything in it.
 
-Start from the [portal](https://bridge.demo.opensuite.online/). After sign-in,
-the home page shows team chat, mail, meeting rooms, upcoming calendar events,
-recent Wiki pages, and file shortcuts.
+Your sign-in address is also your email address. If your organisation uses
+its own domain it looks like `maria.lopez@northwind.example`; otherwise it ends
+in the installation's mail domain, such as `@demo.opensuite.online`.
 
-<p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
-<div className="annotated-shot-scroll">
-  <div className="annotated-shot">
-    <img src="/img/users/portal-dashboard.png" alt="Open Suite home dashboard" />
-    <span aria-hidden="true" className="shot-marker" style={{left: '39%', top: '20%'}}>1</span>
-    <span aria-hidden="true" className="shot-marker" style={{left: '3.5%', top: '37%'}}>2</span>
-    <span aria-hidden="true" className="shot-marker" style={{left: '76%', top: '20%'}}>3</span>
-    <span aria-hidden="true" className="shot-marker" style={{left: '39%', top: '68%'}}>4</span>
-  </div>
-</div>
+:::note Looking for the earlier version?
+These pages describe the current Open Suite. The earlier version, built from
+Nextcloud, Keycloak and La Suite apps, is documented at
+[docs.opensuite.online/classic](https://docs.opensuite.online/classic/).
+:::
 
-<div className="shot-callouts">
-  <div><span>1</span><p><strong>Mail</strong> previews unread messages and opens your inbox.</p></div>
-  <div><span>2</span><p><strong>Calendar</strong> shows upcoming events and their join links.</p></div>
-  <div><span>3</span><p><strong>Meet</strong> starts an instant call or reopens a room.</p></div>
-  <div><span>4</span><p><strong>Files</strong> keeps recent work close to the dashboard.</p></div>
-</div>
+## Sign in
 
-## What you can do
+1. Open your organisation's Open Suite address in a browser.
+2. Enter your **Address** and **Password**. You can leave out the part after
+   `@` if your address is on the installation's main mail domain.
+3. Click **Sign in**.
 
-- [Find your way around Open Suite](./navigate-open-suite.md)
-- [Send and manage email](./use-mail.md)
-- [Work with files](./work-with-files.md)
-- [Share files and folders](./share-files-and-folders.md)
-- [Create a document](./create-a-document.md)
-- [Collaborate on documents](./collaborate-on-documents.md)
-- [Create a calendar invite](./create-a-calendar-invite.md)
-- [Join a video call](./join-a-video-call.md)
-- [Use contacts](./use-contacts.md)
-- [Work with tables](./work-with-tables.md)
-- [Search and find work](./search-and-find-work.md)
-- [Use team chat](./use-team-chat.md)
-- [Manage your account](./manage-your-account.md)
-- [Fix common problems](./troubleshooting.md)
+![The Open Suite sign-in page](/img/users/sign-in.png)
 
-## Daily starting point
+Open Suite keeps you signed in on that browser for 30 days.
 
-Use the dashboard first when you are not sure where to go:
+## First sign-in with a temporary password
 
-1. Check **Calendar** for upcoming meetings and click **Join** when a meeting is
-   ready.
-2. Use **Meet → Start instant meeting** for an unscheduled call.
-3. Use **Docs** to reopen recent Wiki pages, or **Files** to reopen Office
-   documents and uploaded files.
-4. Use the top navigation to open Mail, Chat, Meet, Office apps, Calendar, or
-   the tools under **More**.
+When an administrator adds you, they give you your address and a temporary
+password. The first time you sign in with it, Open Suite asks you to
+**Choose your password**. Enter a new password of at least 10 characters and
+click **Continue**.
+
+![Choosing a password at first sign-in](/img/users/choose-password.png)
+
+## Create a new organisation
+
+If the installation allows sign-up, the sign-in page shows
+**New here? Create an organisation**. Use it to start a new organisation with
+yourself as its owner:
+
+1. Click **Create an organisation**.
+2. Enter the **Organisation** name, **Your name** and **Your address** (the
+   part before `@`). Open Suite tells you whether the address is available.
+3. Choose a **Password** of at least 10 characters.
+4. If the form asks for an **Invitation code**, enter the code the people who
+   run the installation gave you.
+5. Click **Create organisation**.
+
+![The Create your organisation form](/img/users/sign-up.png)
+
+You go straight to Home. As the owner, you can add colleagues from
+[Admin](/admins). If the page says **Sign-up is closed**, ask the people who
+run the installation for an account.
+
+## What is where
+
+| To do this | Open |
+| --- | --- |
+| Read and send email | [Mail](./mail.md) |
+| Plan meetings and events | [Calendar](./calendar.md) |
+| Keep addresses and phone numbers | [Contacts](./contacts.md) |
+| Message colleagues | [Chat](./chat.md) |
+| Hold a video call | [Meet](./meet.md) |
+| Store, share and preview files | [Files](./files.md) |
+| Write a document | [Documents](./documents.md) |
+| Work with numbers and charts | [Spreadsheets](./spreadsheets.md) |
+| Present slides | [Presentations](./presentations.md) |
+| Find anything | [Search](./home-and-search.md#search-everything) |
+| Change your name or password | [Your account](./account.md) |
+
+## Sign out
+
+Click your initials at the bottom of the navigation bar and choose
+**Sign out**.

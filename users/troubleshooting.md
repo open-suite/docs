@@ -1,74 +1,89 @@
 ---
-sidebar_position: 15
+sidebar_position: 13
+title: Troubleshooting and offline use
 ---
-# Fix common problems
+# Troubleshooting and offline use
 
-Use these checks before asking an admin for help.
+## Working offline
 
-## An app asks me to sign in again
+Open Suite keeps the app and a copy of your data on your device, so it opens
+quickly and keeps working when the connection drops. When you are offline, a
+bar at the top says **You're offline. Open Suite keeps working and will sync
+when you're back.**
 
-1. Return to `https://bridge.demo.opensuite.online/`.
-2. If the portal also asks you to sign in, complete sign-in there.
-3. Open the app again from the portal navigation instead of reusing a stale app
-   login page.
+- **Documents** you have opened on this device can be edited offline. The
+  label next to the title says **Offline · saved on this device**, and your
+  changes are sent when the connection returns.
+- **Spreadsheets** keep working for the one you have open. Others cannot be
+  edited until you are back online.
+- Mail, chat and the calendar show what was already loaded. Sending needs a
+  connection.
 
-If the app still loops back to sign-in, close its tab, open it from the portal
-once more, and then contact an administrator. Do not enter your password into an
-unexpected app-specific login form.
+Signing out deletes every copy of your data from the device. If you made
+changes offline, reconnect and wait for **Saved** before you sign out. On a
+shared computer, always sign out when you finish.
 
-## I cannot find a document
+## Sign-in problems
 
-1. Open **Office → Files**.
-2. Search for a word from the file name.
-3. Check **Recent**.
-4. Check **Shares** and folders shared with your team.
-5. Check **Favorites** if you marked it earlier.
-6. Check **Deleted files** if the document may have been removed. Select it and
-   choose **Restore** if you find it.
+| Message | What to do |
+| --- | --- |
+| That address and password don't match. | Check the address (you can leave out the part after `@` on the main domain) and the password. If you have forgotten it, ask an administrator to reset it. |
+| Too many attempts. Wait a few minutes and try again. | After 10 attempts in 5 minutes, sign-in for that address pauses. Wait five minutes. |
+| This account is suspended. Ask your administrator. | An administrator has suspended your account. |
+| Sign-up is closed | This installation does not allow new organisations. Ask the people who run it for an account. |
 
-If someone else owns the file, ask the owner to confirm that it is still shared
-with your named user or group.
+## Mail
 
-## The Meet camera or microphone does not work
+- **Your mailbox is being prepared**: a new account takes a few seconds the
+  first time. The mailbox appears on its own.
+- **Your organisation's plan sends mail only to addresses on Open Suite.**:
+  your organisation is on the Free plan, which cannot send to other
+  providers. See [Plan and limits](/admins/plan-and-limits).
+- **That file is too large to attach (50 MB limit). Share a link to it
+  instead.**: put the file in Files, create a public link, and paste the link
+  into the message.
+- Pictures missing from a message: Open Suite hides pictures from other
+  websites. Click **Show images**.
 
-1. Open the browser's site controls beside the address bar.
-2. Allow camera and microphone access for Meet.
-3. Check the operating system's camera and microphone privacy settings.
-4. Close other apps that may be using the camera or microphone.
-5. Reload Meet and rejoin the room.
+## Files
 
-## A calendar event has no meeting link
+- **Your organisation's storage is full.**: delete things you do not need and
+  empty the trash, or ask your administrator. Storage is shared by the whole
+  organisation.
+- **That file is too large (2 GB limit).**: a single upload can be up to 2 GB.
+- **Only the owner can move this to the trash.**: ask the person who owns the
+  item.
+- **This folder isn't available** or **This file isn't available**: it was
+  moved to the trash, or it is no longer shared with you.
 
-For a new event, wait briefly for Open Suite to add the link automatically. If
-the location field remains empty, click **Add Meet link**. Save only after the
-Meet URL appears.
+## Meetings
 
-If the button cannot create a link, close and reopen the event editor and try
-once more. Do not type a made-up Meet URL; ask an administrator if generation
-continues to fail.
+- **Camera and microphone are blocked. You can still join and listen.**:
+  allow the camera and microphone for the Open Suite site in your browser's
+  settings, then reload the page.
+- **This meeting doesn't exist**: check the link. The organiser may have
+  deleted the room.
+- No **Background** button, or **Backgrounds aren't available on this
+  device**: your browser or graphics card cannot run background effects
+  (they need WebGL 2). Try another browser or device.
+- Others cannot hear you: check that the microphone button is not crossed
+  out (**Unmute**).
 
-## A shared link does not open
+## Calendar
 
-Ask the owner to check whether the link expired, requires a password, or was
-unshared. Internal work should usually be shared with your named user or group.
-If your access comes from a parent folder, that folder's owner must repair the
-share.
+- Reminders appear only while Open Suite is open in a browser tab. Click
+  **Show reminders as notifications** in the calendar to get them as system
+  notifications.
+- **Only the organiser can move this event.**: you can answer and remove the
+  event from your calendar, but only the organiser can change it.
 
-## Chat does not open a room
+## Chat
 
-Return to the portal and click **Chat** again. Reload Chat once if the room list
-stays blank. New accounts should have a welcome room; contact an administrator
-if no rooms appear after sign-in completes.
+- **Chat is being prepared**: wait a few seconds after your first sign-in.
+- **Not sent. Check your connection and try again.**: the message did not
+  reach the server.
 
-## A profile or password field cannot be changed
+## Still stuck
 
-Locked or missing account fields are managed by your organization. Open
-**Office → Files**, then your avatar → **Settings → Security** to review the
-controls available to you. Ask an administrator for the correct password-reset
-or profile-update process when the control you need is absent.
-
-## What to include when asking for help
-
-Tell the administrator which app you opened, what you expected, the exact error
-text, and when it happened. A screenshot can help, but remove private messages,
-contact details, file contents, meeting links, and passwords before sharing it.
+Ask your organisation's administrator. Administrators can reset passwords,
+reactivate suspended accounts and check the plan; see [For admins](/admins).
