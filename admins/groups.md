@@ -34,10 +34,11 @@ Free plan".
 
 The group's settings open, so you can add its members straight away.
 
-Group addresses follow the same rules as people's: 3 to 32 letters, digits,
-dots or dashes, and reserved names such as `admin`, `postmaster`, `support`
-and `info` cannot be used. An address cannot belong to a person and a group
-at once.
+Group addresses are 3 to 32 letters, digits, dots or dashes. On your own
+domain you can use any name, including `support`, `info` and `billing`. On
+the installation's shared mail domain, reserved names such as `admin`,
+`postmaster`, `support` and `info` cannot be used. An address cannot belong
+to a person and a group at once.
 
 ## Add members and choose their roles
 
