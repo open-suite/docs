@@ -3,14 +3,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Open Suite Docs',
-  tagline: 'The open, self-hosted digital workplace',
+  title: 'Open Suite Classic Docs',
+  tagline: 'The k3s distribution of Open Suite',
   favicon: 'img/logo.svg',
 
   future: {v4: true},
 
   url: 'https://docs.opensuite.online',
-  baseUrl: '/',
+  // Served beside the current docs, which own the root.
+  baseUrl: '/classic/',
 
   organizationName: 'open-suite',
   projectName: 'open-suite',
@@ -64,6 +65,12 @@ const config = {
       image: 'img/opensuite-social-card.png',
       metadata: [{name: 'theme-color', content: '#0b1f33'}],
       colorMode: {respectPrefersColorScheme: true},
+      announcementBar: {
+        id: 'classic',
+        content:
+          'These are the docs for Open Suite Classic, the k3s distribution. For the current Open Suite, see <a href="https://docs.opensuite.online/">docs.opensuite.online</a>.',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Open Suite',
         logo: {

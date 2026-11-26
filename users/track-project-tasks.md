@@ -16,7 +16,7 @@ tab and keeps the same Open Suite header.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/projects.png" alt="Open Suite Projects showing a populated project board" />
+    <img src="/classic/img/users/projects.png" alt="Open Suite Projects showing a populated project board" />
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '36%', top: '2.5%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '11%', top: '22%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '24%', top: '18%'}}>3</span>

@@ -13,7 +13,7 @@ From the portal, click **Office → Documents**.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-office-menu.png" alt="Open Suite portal with the Office menu open" />
+    <img src="/classic/img/users/portal-office-menu.png" alt="Open Suite portal with the Office menu open" />
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '20.5%', top: '3%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '24%', top: '8.3%'}}>2</span>
   </div>
@@ -35,7 +35,7 @@ From the portal, click **Office → Documents**.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/files-new-menu.png" alt="Office New menu with document creation choices" />
+    <img src="/classic/img/users/files-new-menu.png" alt="Office New menu with document creation choices" />
     <span aria-hidden="true" className="shot-marker" style={{left: '21%', top: '9.5%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '21%', top: '42%'}}>2</span>
   </div>

@@ -15,7 +15,7 @@ recent Wiki pages, and file shortcuts.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-dashboard.png" alt="Open Suite home dashboard" />
+    <img src="/classic/img/users/portal-dashboard.png" alt="Open Suite home dashboard" />
     <span aria-hidden="true" className="shot-marker" style={{left: '39%', top: '20%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '3.5%', top: '37%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '76%', top: '20%'}}>3</span>

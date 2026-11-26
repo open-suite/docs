@@ -20,7 +20,7 @@ The home page collects your current work in one place:
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-dashboard.png" alt="Open Suite dashboard and top navigation" />
+    <img src="/classic/img/users/portal-dashboard.png" alt="Open Suite dashboard and top navigation" />
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '15%', top: '7%'}}>1</span>
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '27%', top: '7%'}}>2</span>
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '33%', top: '7%'}}>3</span>
@@ -42,7 +42,7 @@ Click **Office** in the top navigation, then choose the app you need.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-office-menu.png" alt="Office menu open from the Open Suite navigation" />
+    <img src="/classic/img/users/portal-office-menu.png" alt="Office menu open from the Open Suite navigation" />
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '23%', top: '2.5%'}}>1</span>
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '28%', top: '6%'}}>2</span>
     <span aria-hidden="true" className="shot-marker shot-marker--compact" style={{left: '34%', top: '22.5%'}}>3</span>

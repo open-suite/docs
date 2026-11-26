@@ -13,7 +13,7 @@ Click **Mail** in the Open Suite navigation. Mail opens your inbox.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/mail-inbox.png" alt="Open Suite Mail inbox" />
+    <img src="/classic/img/users/mail-inbox.png" alt="Open Suite Mail inbox" />
     <span aria-hidden="true" className="shot-marker" style={{left: '12%', top: '8%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '2%', top: '20%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '19%', top: '16%'}}>3</span>
@@ -39,7 +39,7 @@ Click **Mail** in the Open Suite navigation. Mail opens your inbox.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/mail-compose.png" alt="A new email ready to send in Open Suite Mail" />
+    <img src="/classic/img/users/mail-compose.png" alt="A new email ready to send in Open Suite Mail" />
     <span aria-hidden="true" className="shot-marker" style={{left: '32%', top: '22%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '32%', top: '35%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '32%', top: '47%'}}>3</span>

@@ -41,7 +41,7 @@ fields for a quick starting point.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-dashboard.png" alt="Open Suite dashboard with Docs and Files cards" />
+    <img src="/classic/img/users/portal-dashboard.png" alt="Open Suite dashboard with Docs and Files cards" />
     <span aria-hidden="true" className="shot-marker" style={{left: '62%', top: '55%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '36%', top: '88%'}}>2</span>
   </div>

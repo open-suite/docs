@@ -12,7 +12,7 @@ Open **Office → Files**, then find the file or folder.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/files-share-source.png" alt="Files list with a folder and a file" />
+    <img src="/classic/img/users/files-share-source.png" alt="Files list with a folder and a file" />
     <span aria-hidden="true" className="shot-marker" style={{left: '23%', top: '26%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '54%', top: '26%'}}>2</span>
   </div>

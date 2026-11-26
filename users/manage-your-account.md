@@ -15,7 +15,7 @@ preferences.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/account-settings.png" alt="Personal account settings with profile and regional fields" />
+    <img src="/classic/img/users/account-settings.png" alt="Personal account settings with profile and regional fields" />
     <span aria-hidden="true" className="shot-marker" style={{left: '20%', top: '14.5%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '96%', top: '32.5%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '96%', top: '70%'}}>3</span>

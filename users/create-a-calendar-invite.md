@@ -25,7 +25,7 @@ navigation was reorganized. Use the current **Calendar** link described above.*
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/calendar-new-event.png" alt="Calendar form for a new event" />
+    <img src="/classic/img/users/calendar-new-event.png" alt="Calendar form for a new event" />
     <span aria-hidden="true" className="shot-marker" style={{left: '59%', top: '22.5%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '59%', top: '31%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '62%', top: '51%'}}>3</span>

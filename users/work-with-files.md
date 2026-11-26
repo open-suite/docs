@@ -12,7 +12,7 @@ From the portal, click **Office → Files**.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-office-menu.png" alt="Open Suite portal with the Office menu open" />
+    <img src="/classic/img/users/portal-office-menu.png" alt="Open Suite portal with the Office menu open" />
     <span aria-hidden="true" className="shot-marker" style={{left: '24%', top: '24%'}}>1</span>
   </div>
 </div>
@@ -38,7 +38,7 @@ You can also drag files from your computer into the file list.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/files-new-menu.png" alt="Files app with the New menu open" />
+    <img src="/classic/img/users/files-new-menu.png" alt="Files app with the New menu open" />
     <span aria-hidden="true" className="shot-marker" style={{left: '21%', top: '9.5%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '21%', top: '19%'}}>2</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '21%', top: '31%'}}>3</span>

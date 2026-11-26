@@ -41,7 +41,7 @@ export default function Home() {
     <Layout description="Practical Open Suite documentation">
       <main className={styles.page}>
         <section className={styles.hero}>
-          <img className={styles.heroArt} src="/img/opensuite-hero.png" alt="" />
+          <img className={styles.heroArt} src="/classic/img/opensuite-hero.png" alt="" />
           <div className={styles.heroText}>
             <span className={styles.eyebrow}>Open Suite documentation</span>
             <Heading as="h1">The operating manual for an open workplace.</Heading>
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.preview} aria-label="Open Suite dashboard preview">
-            <img src="/img/opensuite-apps.png" alt="Open Suite workspace illustration" />
+            <img src="/classic/img/opensuite-apps.png" alt="Open Suite workspace illustration" />
           </div>
         </section>
 

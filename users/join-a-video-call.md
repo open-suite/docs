@@ -26,7 +26,7 @@ meeting**; the join action still opens the link-or-code flow.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/meet-home.png" alt="Earlier Meet home screen with create and join actions" />
+    <img src="/classic/img/users/meet-home.png" alt="Earlier Meet home screen with create and join actions" />
     <span aria-hidden="true" className="shot-marker" style={{left: '15%', top: '59%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '28%', top: '59%'}}>2</span>
   </div>
@@ -72,7 +72,7 @@ Meet link.
 <p className="shot-scroll-hint">Swipe or scroll the screenshot to see every detail.</p>
 <div className="annotated-shot-scroll">
   <div className="annotated-shot">
-    <img src="/img/users/portal-dashboard.png" alt="Open Suite dashboard with Calendar and Meet cards" />
+    <img src="/classic/img/users/portal-dashboard.png" alt="Open Suite dashboard with Calendar and Meet cards" />
     <span aria-hidden="true" className="shot-marker" style={{left: '17%', top: '56%'}}>1</span>
     <span aria-hidden="true" className="shot-marker" style={{left: '88%', top: '24%'}}>2</span>
   </div>
