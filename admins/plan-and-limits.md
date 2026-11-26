@@ -18,6 +18,7 @@ The **Plan** card shows your plan and how much of it you use.
 | --- | --- | --- |
 | People | 5 | 250 |
 | Storage | 5 GB | 250 GB |
+| Groups (shared inboxes) | 5 | 250 |
 | Custom domains | 1 | 10 |
 | Mail to other providers | No, Open Suite addresses only | Yes |
 
@@ -29,8 +30,8 @@ On the Free plan, people can send mail only to addresses on domains that the
 same Open Suite installation hosts: the installation's own mail domain and the
 verified domains of any organisation on it. Mail to anyone else, such as a
 Gmail or company address, is refused with "Your organisation's plan sends mail
-only to addresses on Open Suite." Receiving mail from anywhere works on both
-plans.
+only to addresses on Open Suite." The same applies to mail sent as a
+[group](./groups.md). Receiving mail from anywhere works on both plans.
 
 On the Team plan, people can mail anyone.
 
@@ -43,11 +44,11 @@ Items in the trash count until they are deleted for ever, after 30 days or
 when someone empties the trash. When storage is full, uploads and new content
 fail with "Your organisation's storage is full."
 
-### People and domains
+### People, groups and domains
 
-When the organisation has as many people or custom domains as the plan
-allows, adding another fails with a message naming the limit. Removing a
-person frees their place. [Agents](./agents.md) count as people, because
+When the organisation has as many people, groups or custom domains as the
+plan allows, adding another fails with a message naming the limit. Removing a
+person or deleting a group frees its place. Groups do not count as people. [Agents](./agents.md) count as people, because
 each has its own mailbox and storage.
 
 ## Change the plan

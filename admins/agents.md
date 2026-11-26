@@ -12,7 +12,8 @@ tokens that administrators create for it.
 
 Otherwise an agent is a member like anyone else. It has its own address and
 mailbox, calendar, files and chat account. Colleagues can mail it, invite it
-to meetings, share documents with it and message it in chat. In
+to meetings, share documents with it and message it in chat, and add it to a
+[group](./groups.md) so it can read or answer a shared inbox. In
 **Admin** > **People** it is listed with everyone else, marked **Agent**.
 
 An agent only sees what is its own or shared with it, like a person in the

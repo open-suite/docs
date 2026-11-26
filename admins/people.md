@@ -15,8 +15,8 @@ the list shows how many people your plan allows, for example
 2. Enter their **Name**. Open Suite suggests an **Address** from it, such as
    `jonas.weber`; change it if you like. If your organisation has a verified
    mail domain, choose which domain the address uses.
-3. Choose a **Role**: **Member**, or **Administrator: can manage people and
-   domains**.
+3. Choose a **Role**: **Member**, or **Administrator: can manage people,
+   groups and domains**.
 4. Click **Add person**.
 
 ![The Add a person dialog](/img/admins/add-person.png)
@@ -30,7 +30,8 @@ At their first sign-in, the person is asked to choose their own password.
 They then appear in everyone's contacts and chat.
 
 Addresses use 3 to 32 letters, digits, dots or dashes. Some names, such as
-`admin`, `postmaster` and `info`, are reserved. When the organisation has as
+`admin`, `postmaster` and `info`, are reserved, and an address a
+[group](./groups.md) uses is taken. When the organisation has as
 many people as the plan allows, adding fails with "Your plan includes 5
 people. Upgrade to add more."
 
