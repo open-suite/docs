@@ -112,7 +112,8 @@ run `deploy.sh`:
 | `OS_SIGNUP_CODE` | any text | empty | The invitation code when `OS_SIGNUP=code`. |
 | `OS_OPERATORS` | comma-separated sign-in addresses | empty | Platform operators. They see an extra **All organisations** tab in Admin, listing every organisation, and can switch an organisation between the Free and Team plans. |
 | `OS_MAIL_RELAY` | `host:port:user:password` or `file:/path` | empty | Send outgoing mail through a smarthost instead of delivering directly. Port 465 uses implicit TLS; other ports use STARTTLS. `file:/path` reads the value from a file on the server, so the password never appears on your command line. |
-| `OS_ORG_DOMAIN_SUFFIX` | a domain, e.g. `opensuite.example` | empty | Give every new organisation its own mail domain, `<name>.opensuite.example`, chosen at sign-up, and offer to start it with example data. Publish a wildcard MX record, `*.opensuite.example` to the server's mail host, so mail for every such domain reaches the server. Empty: organisations use the installation's mail domain and sign-up offers no example data. |
+| `OS_ORG_DOMAIN_SUFFIX` | a domain, e.g. `opensuite.example` | empty | Give every new organisation its own mail domain, `<name>.opensuite.example`, chosen at sign-up. Publish a wildcard MX record, `*.opensuite.example` pointing at `OS_MAIL_HOST`, so mail for every such domain reaches the server, and a wildcard SPF record. Empty: organisations use the installation's mail domain. |
+| `OS_MAIL_HOST` | a host name, e.g. `mail.opensuite.example` | the web domain | The name your MX records point at. It needs an A record to the server; Open Suite gets its certificate and the mail server presents it to other mail servers. |
 
 For example:
 

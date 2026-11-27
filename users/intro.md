@@ -56,23 +56,19 @@ yourself as its owner:
 4. Choose a **Password** of at least 10 characters.
 5. If the form asks for an **Invitation code**, enter the code the people who
    run the installation gave you.
-6. Under **Start with**, choose:
-   - **Example data** to explore the suite with something in it: two example
-     colleagues with documents, files, mail, a shared Sales inbox, calendar
-     events and a chat, all around a product launch. You can remove it in one
-     step later (see [Plan and limits](/admins/plan-and-limits#remove-the-example-data)).
-   - **An empty organisation** to start with just yourself.
-7. Click **Create organisation**.
+6. Click **Create organisation**.
 
 ![The Create your organisation form](/img/users/sign-up.png)
 
-You go straight to Home. As the owner, you can add colleagues from
+You go straight to Home, in a new organisation with just you in it. To look
+around a suite that is already full of work, sign in to the public demo
+instead. As the owner, you can add colleagues from
 [Admin](/admins). If the page says **Sign-up is closed**, ask the people who
 run the installation for an account.
 
 Some installations do not give each organisation its own address. Their form
-has no organisation address and no **Start with** choice, and your address is
-on the installation's own domain.
+has no organisation address, and your address is on the installation's own
+domain.
 
 ## What is where
 
