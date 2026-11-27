@@ -208,6 +208,58 @@ The spreadsheet recalculates as if the values had been typed.
 spreadsheet from data, use `create_document` with `kind` `sheet` and the data
 as CSV in `content`.
 
+### Format, sort, filter and summarise
+
+`POST /api/v1/documents/{id}/sheet-ops` (`edit_sheet`) does everything the
+spreadsheet's menus do. It takes a list of `ops`, applied in order as one
+change that merges with anyone editing, and answers with one result per op.
+Each op works on `sheet` (a name or 0-based index; default the request's
+`sheet`, else the first). Ranges are A1 notation, such as `B2:D9`,
+`Sheet2!A1:C5`, `A:C` or `2:5`; columns are letters.
+
+```bash
+curl -X POST https://office.demo.opensuite.online/api/v1/documents/$SHEET/sheet-ops \
+  -H "Authorization: Bearer $OPENSUITE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "sheet": "Sales",
+    "ops": [
+      {"op": "freeze", "rows": 1},
+      {"op": "format", "range": "A1:D1", "bold": true, "fill": "#ffec99"},
+      {"op": "sort", "range": "A1:D200", "header": true, "by": [{"column": "C", "desc": true}]},
+      {"op": "filter", "range": "A1:D200", "criteria": {"A": {"hidden": ["East"]}}},
+      {"op": "conditionalFormat", "range": "C2:C200", "cond": "GreaterThan", "a": "1000", "format": {"fill": "#d3f9d8"}},
+      {"op": "validation", "range": "B2:B200", "rule": {"type": "list", "values": ["Open", "Won", "Lost"]}},
+      {"op": "pivot", "source": "A1:D200", "rows": ["A"], "values": [{"column": "C", "fn": "SUM"}]}
+    ]
+  }'
+```
+
+| Op | What it does |
+| --- | --- |
+| `format` | On `range`: `bold`, `italic`, `underline`, `strikethrough`, `font` (a family such as `Georgia`, or empty for the default), `size` (points), `color` and `fill` (`#rrggbb`), `align` (`left`, `center`, `right`), `valign` (`top`, `middle`, `bottom`), `wrap` (`overflow`, `wrap`, `clip`), `numberFormat` (such as `#,##0.00` or `0%`), `borders` (`all`, `outer`, `bottom`, `none`…) |
+| `clearFormatting`, `merge`, `unmerge` | On `range` |
+| `freeze` | `rows` and/or `columns` to keep in view |
+| `resize` | `columns` (such as `A:C`) and `width`, or `rows` (such as `2:5`) and `height`, in pixels |
+| `insertRows`, `deleteRows` | At row number `at`, `count` rows (default 1) |
+| `insertColumns`, `deleteColumns` | At column letter `at`, `count` columns |
+| `addSheet`, `renameSheet`, `deleteSheet` | `name` for the first two |
+| `sort` | `range`, `by` (a list of `{column, desc}`), `header` to keep the first row in place. Rows move with their formatting, and formulas adjust as they would when copied. Answers `{moved}` |
+| `filter`, `removeFilter` | The sheet's filter, which everyone sees: `range` (headings in its first row) and `criteria` by column letter, each `{hidden: [values to hide]}` or `{condition: {op, a, b}}` (`op` is `empty`, `notEmpty`, `contains`, `notContains`, `starts`, `ends`, `is`, `gt`, `gte`, `lt`, `lte`, `eq`, `ne` or `between`) |
+| `addFilterView`, `removeFilterView` | A named filter view (`name`, `range`, `criteria`) that changes the sheet only for whoever opens it. Answers `{id}` |
+| `conditionalFormat` | On `range`: `cond` (`GreaterThan`, `LessThan`, `Between`, `Equal`, `Contains`, `BeginsWith`, `Blanks`, `DuplicateValues` and more), `a` and `b` to compare with, and `format` (`bold`, `italic`, `strikethrough`, `color`, `fill`); or a colour `scale` (`min`, optional `mid`, `max` colours). With `id`, replaces that rule. Answers `{id}` |
+| `removeConditionalFormat` | By `id` |
+| `validation` | On `range`: `rule` is `{type: "list", values}`, `{type: "range", source}`, `{type: "checkbox"}`, `{type: "number", op, a, b}` or `{type: "text", op, a}`. `strict` (default true) refuses other input; `help` explains the rule. Answers `{id}` |
+| `clearValidation` | Removes the rules over `range` |
+| `pivot` | A pivot table on a new sheet: `source` (headings in its first row), `rows` and `columns` (column letters; at most one column), `values` (`{column, fn}` with `fn` `SUM`, `COUNT`, `AVERAGE`, `MIN` or `MAX`) and `filters` (by column letter, the values to leave out). Its totals are formulas, so they follow the data; rows added under the source are taken in. Answers `{id, sheet}` |
+| `updatePivot`, `removePivot` | By `id`, with any of the fields above |
+| `replace` | `find` and `replace`, with `matchCase`, `wholeCell`, `regex`, `formulas` (also change formulas) and `allSheets`. Answers `{replaced}` |
+
+`GET /api/v1/documents/{id}/sheet-setup` (`get_sheet_setup`) lists, for each
+sheet, its frozen rows and columns, its filter, filter views, conditional
+formatting rules, data validation rules and pivot table, with the ids the ops
+above take.
+
 ## Presentations
 
 `GET /api/v1/documents/{id}/slides` (`read_slides`) returns the theme and
