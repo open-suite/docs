@@ -61,7 +61,8 @@ curl "https://office.demo.opensuite.online/api/v1/documents/$DOC/text?format=mar
 `format` is `markdown` (default), `html` or `text`. The text reads as it
 would with every suggestion accepted, without comment markings. Pictures are
 linked as `/api/v1/blobs/<id>`, which you can fetch with the same token
-(`get_image`).
+(`get_image`). The response also has the document's `words`, `characters` and
+`charactersNoSpaces`. In Markdown, footnotes are written as `[^1]` notes.
 
 ### Write
 
@@ -83,6 +84,67 @@ curl -X PUT https://office.demo.opensuite.online/api/v1/documents/$DOC/text \
 
 To edit part of a document, read it as Markdown, change it, and write it back
 with `replace`. Only the paragraphs you changed are touched.
+
+### Formatting
+
+Markdown has no fonts or page breaks. For those, read and write `html`, which
+uses these forms:
+
+| Formatting | HTML |
+| --- | --- |
+| Font, size, colour | `<span style="font-family: Georgia; font-size: 14pt; color: #c0392b">` |
+| Highlight | `<mark data-color="#fff3a3">` |
+| Line spacing, indent | `<p style="line-height: 1.5" data-indent="1">` (indent steps 1 to 8) |
+| Alignment | `style="text-align: center"` on a paragraph or heading (`left`, `center`, `right`, `justify`) |
+| Page break | `<div data-page-break></div>` |
+| Table of contents | `<nav data-toc></nav>`, filled from the headings and kept up to date |
+| Footnote | `<sup data-footnote="The note's text."></sup>` where the number goes |
+| Picture | `<img src="..." width="50%" data-wrap="left">`: `width` in % of the text width or pixels; `data-wrap` is `break` (own line, placed with `data-align` `left`, `center` or `right`), `left` or `right` (text flows round it); `data-inline` puts it in a line of text |
+
+```bash
+curl -X PUT https://office.demo.opensuite.online/api/v1/documents/$DOC/text \
+  -H "Authorization: Bearer $OPENSUITE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"format": "html", "mode": "append",
+       "content": "<div data-page-break></div><h1 style=\"text-align: center\">Appendix</h1><p>Figures are in euros.<sup data-footnote=\"Excluding VAT.\"></sup></p>"}'
+```
+
+### Find and replace
+
+`POST /api/v1/documents/{id}/replace` (`find_replace`) replaces every match
+of `find` with `replace`, keeping the formatting of the text it replaces.
+`matchCase` and `wholeWord` narrow the matches. The response says how many
+were `replaced`.
+
+```bash
+curl https://office.demo.opensuite.online/api/v1/documents/$DOC/replace \
+  -H "Authorization: Bearer $OPENSUITE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"find": "Q3", "replace": "third quarter", "matchCase": true, "wholeWord": true}'
+```
+
+### Page setup
+
+`GET /api/v1/documents/{id}/page` (`read_page_setup`) returns the page setup;
+`PATCH` (`update_page_setup`) changes the fields you send:
+
+| Field | Values |
+| --- | --- |
+| `size` | `a4` (default), `letter`, `legal`, `a5`, `a3` |
+| `orientation` | `portrait` (default), `landscape` |
+| `top`, `right`, `bottom`, `left` | Margins in millimetres, 0 to 100 (default 25.4) |
+| `header`, `footer` | Text on every page; `{page}`, `{pages}` and `{title}` are filled in. Empty for none. |
+| `headerAlign`, `footerAlign` | `left`, `center` (default), `right` |
+
+```bash
+curl -X PATCH https://office.demo.opensuite.online/api/v1/documents/$DOC/page \
+  -H "Authorization: Bearer $OPENSUITE_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"orientation": "landscape", "footer": "Page {page} of {pages}", "footerAlign": "right"}'
+```
+
+Page setup goes with the document into Word and OpenDocument files, into
+printing, and into version history.
 
 ### Comments
 
@@ -200,7 +262,7 @@ extension decides the kind.
 
 | Kind | Import | Export (`format`) |
 | --- | --- | --- |
-| Text document | `.docx`, `.odt`, `.md`, `.html`, `.txt` | `docx`, `odt`, `md`, `html`, `txt` |
+| Text document | `.docx`, `.odt`, `.md`, `.html`, `.txt` | `docx`, `odt`, `md`, `html`, `txt`; Word and OpenDocument keep the formatting and page setup above |
 | Spreadsheet | `.xlsx`, `.csv` | `xlsx`, `csv` (one sheet, chosen with `sheet`) |
 | Presentation | `.pptx` | `pptx` |
 
