@@ -94,7 +94,7 @@ and footer. Page setup applies to everyone with the document open.
 
 The header and footer are printed on every page, on the left, centre or
 right. The buttons under each add the **Page number**, the **Page count** and
-the **Title**; "Page {page} of {pages}" prints as "Page 3 of 12". On screen
+the **Title**; `Page {page} of {pages}` prints as "Page 3 of 12". On screen
 the header and footer show in the margins, with # in place of numbers.
 
 ## Find and replace, and word count
